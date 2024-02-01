@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-paper-scissor</title>
+    <link href="index.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="title">
+                <h2>rock</h2>
+                <h2>paper</h2>
+                <h2>scissor</h2>
+            </div>
+            <div class="score-card">
+                <div class="score-box">
+                    <p>&nbsp; &nbsp;your&nbsp;&nbsp;&nbsp; score </p>
+                    <h1 id="user_score"></h1>
+                </div>
+                <div class="score-box">
+                    <p>computer score </p>
+                    <h1 id="computer_score"></h1>
+                </div>
+                
+            </div>
+       </header>
+       <section class="main" >
+            <div class="circle rock"  data-value="rock">
+                <img src="images/rock.png" alt="Rock"/>
+            </div>
+            <img src="images/Line 1.png" class="top-line"/>
+            <div class="middle-half">
+                <div class="line tilt_1"></div>
+                <div class="line tilt_2"></div>
+            </div>
+            <div class="circle scissor" class="scissor" data-value="scissor">
+                <img src="images/scissor.png" alt="Scissor"/>
+            </div>
+            <div class="circle paper" class="paper" data-value="paper">
+                <img src="images/paper.png" alt="Paper"/>
+            </div>
+        </section>
+        <div class="result-section">
+            <div class="result-bar">
+                <div class="userpicked">
+                    <p>you picked</p>
+                    <div class="circle" id="user">
+                        <img id="userimg"/>
+                    </div>
+                    <div id="userwiningIndicator" class="winnerIndicator">
+                            <div class="anime outer" style="--i: 1"></div>
+                            <div class="anime inner" style="--i: 2"></div>
+                            <div class="anime innermost" style="--i: 3"></div>
+                    </div>
+                </div>
+                <div class="result">
+                    <p><span id="winner">You win</span><br />against pc</p>
+                    <button class="play-again" id="play">play again</button>
+                </div>
+                <div class="computerpicked">
+                    <p>pc picked</p>
+                    <div class="circle" id="computer" >
+                        <img id="computerimg"/>
+                    </div>
+                    <div id="computerwiningIndicator" class="winnerIndicator">
+                        <div class="anime outer" style="--i: 1"></div>
+                        <div class="anime inner" style="--i: 2"></div>
+                        <div class="anime innermost" style="--i: 3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rule-box ">
+        <div class="rule-header">
+            <p>Game Rules</p>
+        </div>
+        <div class="close-btn">
+            <img src="images/X.png" alt="close-icon">
+        </div>
+        <div class="rule-content">
+            <ul>
+                <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                <li>If both players lay down the same hand, each player lays down another hand</li>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        <button class="next"><a href="celebration.html" class="next_btn">Next</a></button>
+        <button class="rule-btn">Rules</button>
+        
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
